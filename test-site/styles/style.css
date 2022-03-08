@@ -1,0 +1,56 @@
+html {
+	font-size: 24px; /* px means 'pixels': the base font size is now 24 pixels high  */
+	background-color: skyblue
+}
+
+h1 {
+	font-size: 48px;
+	line-height: 2;
+	text-align: center;
+}
+
+h2 {
+	font-size: 32px;
+	text-align: center;
+}
+
+main {
+	width: 700px;
+	height: 800px;
+	margin: 20px auto;
+	background-color: #FF9500;
+	padding: 0 0px 80px 20px;
+	border: 5px solid black;
+	/*
+	background-image: url(qbird.jpg);
+	*/
+}
+ul {
+	margin: 0 170px;
+	padding: 0 0 20px 0;
+}
+
+p {
+	margin: 0 140px;
+	padding: 0 0 20px 0;
+}
+
+p2 {
+	margin: 0 140px;
+	padding: 0 0 20px 0;
+}
+
+button {
+	margin: 0 250px;
+	width:200px;
+	height:40px;
+
+}
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+footer {
+	text-align: right;
+}
