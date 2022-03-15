@@ -1,0 +1,41 @@
+#checkbutton{
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.52);
+    border: 0;
+    color: rgb(57, 0, 214);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 17px 30px;
+    transition: 1s;
+    z-index: 1;
+    box-shadow: 0 3px 24px rgb(0 0 0 / 10%); 
+
+    border-radius: 15px;
+}
+
+#morebutton{
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    position: relative;
+    background-color: #fbcc0a;
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 17px 30px;
+    transition: 1s;
+    z-index: 1;
+    box-shadow: 0 3px 24px rgb(0 0 0 / 10%); 
+
+    border-radius: 15px;
+}
