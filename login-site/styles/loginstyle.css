@@ -1,3 +1,32 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    /*
+    If you set box-sizing: border-box; on an element, padding and border are included in the width and height
+    */
+}
+
+.spinner-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #151515;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content{
+    width: 100%;
+    height: 100vh;
+    background: url("https://source.unsplash.com/random/4000x4000") center no-repeat;
+    background-size: cover;
+}
+
 #checkbutton{
     cursor: pointer;
     display: inline-block;
@@ -39,3 +68,4 @@
 
     border-radius: 15px;
 }
+
