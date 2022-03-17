@@ -1,5 +1,5 @@
 *{
-    padding:0;
+    padding: 0;
     margin:0;
     box-sizing: border-box;
     /*
@@ -15,18 +15,21 @@
     position: absolute;  
 }
 .loader>div{
-    height:100px;
-    width:100px;
-    border:15px solid #45474b;
+    height: 100px;
+    width: 100px;
+    border: 15px solid #45474b;
     border-top-color: #2a88e6;
+    /*
+    other good colors #24e35a
+    */
     position: absolute;
     margin:auto;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     border-radius: 50%;
-    animation: spin 2s infinite cubic-bezier(0.3,0.8,0.7,0.3);
+    animation: spin 1.5s infinite cubic-bezier(0.3,0.8,0.7,0.3);
     /*
     animation: spin <-name of the keyframe you want to bind to the selector
     cubic-bezier(x1,x2,y1,y2)
@@ -40,51 +43,9 @@
 }
 
 .main-content{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: url("https://source.unsplash.com/random/4000x4000") center no-repeat;
     background-size: cover;
-}
-
-#checkbutton{
-    cursor: pointer;
-    display: inline-block;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.52);
-    border: 0;
-    color: rgb(57, 0, 214);
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 17px 30px;
-    transition: 1s;
-    z-index: 1;
-    box-shadow: 0 3px 24px rgb(0 0 0 / 10%); 
-
-    border-radius: 15px;
-}
-
-#morebutton{
-    cursor: pointer;
-    display: inline-block;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    position: relative;
-    background-color: #fbcc0a;
-    border: 0;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 17px 30px;
-    transition: 1s;
-    z-index: 1;
-    box-shadow: 0 3px 24px rgb(0 0 0 / 10%); 
-
-    border-radius: 15px;
 }
 
