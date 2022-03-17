@@ -26,15 +26,17 @@
     left:0;
     right:0;
     border-radius: 50%;
-    animation: spin 1.5s infinite linear;
+    animation: spin 2s infinite cubic-bezier(0.3,0.8,0.7,0.3);
     /*
     animation: spin <-name of the keyframe you want to bind to the selector
+    cubic-bezier(x1,x2,y1,y2)
+    go check https://cubic-bezier.com/;
     */
 }
 
 @keyframes spin{
-
-    100%{transform:rotate(360deg);}
+    0%{ transform:rotate(0deg); }
+    100%{ transform:rotate(360deg); }
 }
 
 .main-content{
