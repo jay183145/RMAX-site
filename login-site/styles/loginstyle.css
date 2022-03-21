@@ -1,3 +1,6 @@
+/*import fonts*/
+@import url('../styles/fonts.css');
+
 /*----------------------------reset---------------------------------*/
 *{
     padding: 0;
