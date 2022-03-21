@@ -1,12 +1,36 @@
+/*----------------------------reset---------------------------------*/
 *{
     padding: 0;
-    margin:0;
+    margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
     /*
     If you set box-sizing: border-box; on an element, padding and border are included in the width and height
     */
 }
+/*--------------x-------------reset-------------------x--------------*/
 
+
+/*----------------global Classes---------------*/
+a{
+    text-decoration: none;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+/*--------x-------global Classes-------x-------*/
+
+
+
+
+/*--------------------------loader------------------------------*/
 .loader{
     height: 100vh;
     width: 100vw;
@@ -42,10 +66,69 @@
     100%{ transform:rotate(360deg); }
 }
 
+/*------------x-------------loader------------------x-----------*/
+
+/*------------------------------navbar----------------------------------*/
+.nav{
+    background: white;
+    padding: 0 2rem;
+    /*
+    collapsible nav menu
+    */
+    height: 0rem;
+    min-height: 40vh;
+    overflow: hidden;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;
+    /*
+    https://www.w3schools.com/cssref/css3_pr_justify-content.asp
+    */
+}
+
+.nav .nav-items{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-items .nav-link{
+    padding:1.6rem 1rem;
+    font-size:1.1rem;
+    position:relative;
+}
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+}
+
+.nav .social{
+    padding: 1.4rem 0;
+
+}
+
+/*--------------x---------------navbar-------------------x--------------*/
+
+
+
+
+
+
+
+
+
+/*------------------------background picture--------------------------*/
 .main-content{
     width: 100vw;
     height: 100vh;
     background: url("https://source.unsplash.com/random/4000x4000") center no-repeat;
     background-size: cover;
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top: 0px;
 }
+/*------------x------------background picture-------------x-----------*/
 
