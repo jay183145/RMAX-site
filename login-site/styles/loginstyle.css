@@ -14,6 +14,35 @@
 /*--------------x-------------reset-------------------x--------------*/
 
 
+/*----------------------------------------------------global variable--------------------------------------------------*/
+:root{
+
+    /*      Theme colors        */
+    --text-gray: #3f4954;
+    --text-light : #686666da;
+    --bg-darkblack: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+    --light-green: #24e35a;
+    --light-blue: #2a88e6;
+    --bg-black: #16191e;
+    --loader-gray: #45474b;
+
+
+
+    /* gradient color  https://webgradients.com/ */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    /*      theme font-family   */
+    --Abel: 'Abel', cursive;
+    --Anton: 'Anton', cursive;
+    --Josefin : 'Josefin', cursive;
+    --Lexend: 'Lexend', cursive;
+    --Livvic : 'Livvic', cursive;
+}
+/*-----------------------------x-----------------------global variable---------------------x-------------------------*/
+
+
 /*----------------global Classes---------------*/
 a{
     text-decoration: none;
@@ -38,17 +67,15 @@ ul{
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    background-color: #16191e;
-    position: absolute;  
+    background-color: var(--bg-black);
+    position: absolute;
+    z-index: 1;
 }
 .loader>div{
     height: 100px;
     width: 100px;
-    border: 15px solid #45474b;
-    border-top-color: #2a88e6;
-    /*
-    other good colors #24e35a
-    */
+    border: 15px solid var(--loader-gray);
+    border-top-color: var(--light-blue);
     position: absolute;
     margin:auto;
     top: 0;
@@ -73,7 +100,7 @@ ul{
 
 /*------------------------------navbar----------------------------------*/
 .nav{
-    background: white;
+    background: var(--white);
     padding: 0 2rem;
     /*
     collapsible nav menu
@@ -100,11 +127,22 @@ ul{
     padding:1.6rem 1rem;
     font-size:1.1rem;
     position:relative;
+    font-family: var(--Abel);
 }
+
+.nav-items .nav-link:hover{
+    background-color: var(--midnight);
+}
+
+.nav-items .nav-link:hover a{
+    color: var(--white);
+}
+
 .nav .nav-brand a{
     font-size: 1.6rem;
     padding: 1rem 0;
     display: block;
+    font-family: var(--Lexend);
 }
 
 .nav .social{
