@@ -33,12 +33,16 @@
     /* gradient color  https://webgradients.com/ */
     --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 
-    /*      theme font-family   */
+    /*     theme font-family     */
+/*----var---font---backupfont---*/
     --Abel: 'Abel', cursive;
     --Anton: 'Anton', cursive;
     --Josefin : 'Josefin', cursive;
     --Lexend: 'Lexend', cursive;
     --Livvic : 'Livvic', cursive;
+    --Bungee : 'Bungee', cursive;
+    --Kalam : 'Kalam', cursive;
+    --Orbitron : 'Orbitron', cursive;
 }
 /*-----------------------------x-----------------------global variable---------------------x-------------------------*/
 
@@ -125,9 +129,9 @@ ul{
 
 .nav-items .nav-link{
     padding:1.6rem 1rem;
-    font-size:1.1rem;
+    font-size:1.3rem;
     position:relative;
-    font-family: var(--Abel);
+    font-family: var(--Kalam);
 }
 
 .nav-items .nav-link:hover{
@@ -139,7 +143,7 @@ ul{
 }
 
 .nav .nav-brand a{
-    font-size: 1.6rem;
+    font-size: 2rem;
     padding: 1rem 0;
     display: block;
     font-family: var(--Lexend);
@@ -147,8 +151,12 @@ ul{
 
 .nav .social{
     padding: 1.4rem 0;
-
 }
+
+.nav .social i{
+    padding: 0.2rem;
+}
+
 
 /*--------------x---------------navbar-------------------x--------------*/
 

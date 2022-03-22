@@ -29,3 +29,21 @@
     font-family: Livvic;
     src: url('../fonts/Livvic/Livvic-Regular.ttf');
 }
+
+/*  font-family: Bungee  */
+@font-face {
+    font-family: Bungee;
+    src: url('../fonts/Bungee/Bungee-Regular.ttf');
+}
+
+/*  font-family: Kalam  */
+@font-face {
+    font-family: Kalam;
+    src: url('../fonts/Kalam/Kalam-Bold.ttf');
+}
+
+/*  font-family: Kalam  */
+@font-face {
+    font-family: Orbitron;
+    src: url('../fonts/Orbitron/Orbitron-VariableFont_wght.ttf');
+}
