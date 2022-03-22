@@ -3,7 +3,6 @@
 
 /*----------------------------reset---------------------------------*/
 *{
-    padding: 0;
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -111,8 +110,9 @@ ul{
     collapsible nav menu
     */
     height: 0rem;
-    min-height: 40vh;
+    min-height: 4rem;
     overflow: hidden;
+    transition: height 1s ease-in-out;
 }
 
 .nav .nav-menu{
@@ -121,7 +121,32 @@ ul{
     https://www.w3schools.com/cssref/css3_pr_justify-content.asp
     */
 }
-/*----- Logo ------*/
+
+/*----- Items -----*/
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.3rem;
+    font-size: 1.2rem;
+    position: relative;
+    font-family: var(--Kalam);
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: var(--midnight);
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: var(--white);
+}
+/*--x-- Items --x--*/
+
+
+/*----------- Logo ------------*/
 
 .nav .nav-brand a{
     font-size: 2rem;
@@ -129,31 +154,7 @@ ul{
     display: block;
     font-family: var(--Lexend);
 }
-/*--x-- Logo --x---*/
-
-/*----- Items -----*/
-
-.nav .nav-items{
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-}
-
-.nav-items .nav-link{
-    padding: 1.6rem 1rem;
-    font-size: 1.3rem;
-    position: relative;
-    font-family: var(--Kalam);
-}
-
-.nav-items .nav-link:hover{
-    background-color: var(--midnight);
-}
-
-.nav-items .nav-link:hover a{
-    color: var(--white);
-}
-/*--x-- Items --x--*/
+/*-----x----- Logo -----x------*/
 
 /*-----social icon-----*/
 
@@ -162,9 +163,9 @@ ul{
 }
 
 .nav .social i{
-    padding: 0.2rem;
+    padding: 0.2rem 0.3rem;
     /*--adjust icon size--*/
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .nav .social i:hover{
@@ -173,13 +174,15 @@ ul{
 
 /*--x--social icon--x--*/
 
-/*-----collapse icon-----*/
+/*--------- collapse icon ---------*/
 .nav .toggle-collapse{
     position: absolute;
     top: 0%;
     width: 90%;
     cursor: pointer;
+    display: none;
 }
+
 .nav .toggle-collapse .toggle-icons{
     display: flex;
     justify-content: flex-end;
@@ -189,16 +192,26 @@ ul{
     font-size: 1.4rem;
     color: var(--text-gray);
 }
-/*--x--collapse icon--x--*/
+/*-----x----- collapse icon -----x-----*/
+
+/*----- jquery ----- */ 
+.collapse{
+    height: 32rem;
+}
+/*--x-- jquery --x-- */ 
 
 /*--------------x---------------navbar-------------------x--------------*/
 
 /*     Viewport less than or equal to 750px     */
 
 
-@media only screen and (max-width: 750px){
-    .nav .nav-menu{
+@media only screen and (max-width: 900px){
+    .nav .nav-menu, .nav .nav-items{
         flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
     }
 }
 
