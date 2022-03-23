@@ -105,7 +105,7 @@ ul{
 /*------------------------------navbar----------------------------------*/
 .nav{
     background: var(--white);
-    padding: 0 2rem;
+    padding: 0 1rem;
     /*
     collapsible nav menu
     */
@@ -116,16 +116,28 @@ ul{
 }
 
 .nav .nav-menu{
-    justify-content: space-between;
     /*
     https://www.w3schools.com/cssref/css3_pr_justify-content.asp
     */
+    justify-content: space-between;
+    
 }
+
+/*----------- Logo ------------*/
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Lexend);
+}
+/*-----x----- Logo -----x------*/
 
 /*----- Items -----*/
 
 .nav .nav-items{
     display: flex;
+    padding: 0 0;
     margin: 0;
 }
 
@@ -145,17 +157,6 @@ ul{
 }
 /*--x-- Items --x--*/
 
-
-/*----------- Logo ------------*/
-
-.nav .nav-brand a{
-    font-size: 2rem;
-    padding: 1rem 0;
-    display: block;
-    font-family: var(--Lexend);
-}
-/*-----x----- Logo -----x------*/
-
 /*-----social icon-----*/
 
 .nav .social{
@@ -163,9 +164,9 @@ ul{
 }
 
 .nav .social i{
-    padding: 0.2rem 0.3rem;
+    padding: 0.2rem 0.2em;
     /*--adjust icon size--*/
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 
 .nav .social i:hover{
@@ -186,7 +187,7 @@ ul{
 .nav .toggle-collapse .toggle-icons{
     display: flex;
     justify-content: flex-end;
-    padding: 1.7rem 0;
+    padding: 1.5rem 0;
 }
 .nav .toggle-collapse .toggle-icons i{
     font-size: 1.4rem;
@@ -205,7 +206,7 @@ ul{
 /*     Viewport less than or equal to 750px     */
 
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 750px){
     .nav .nav-menu, .nav .nav-items{
         flex-direction: column;
     }
