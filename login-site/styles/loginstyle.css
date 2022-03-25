@@ -1,7 +1,7 @@
 /*import fonts*/
 @import url('../styles/fonts.css');
 
-/*----------------------------reset---------------------------------*/
+/*---------------------------- Reset ---------------------------------*/
 *{
     margin: 0;
     box-sizing: border-box;
@@ -10,17 +10,18 @@
     If you set box-sizing: border-box; on an element, padding and border are included in the width and height
     */
 }
-/*--------------x-------------reset-------------------x--------------*/
+/*--------------x------------- Reset -------------------x--------------*/
 
 
-/*----------------------------------------------------global variable--------------------------------------------------*/
+/*---------------------------------------------------- Global Variable Start --------------------------------------------------*/
 :root{
 
-    /*      Theme colors        */
+    /*------ Theme Colors -------*/
     --text-gray: #3f4954;
     --text-light : #686666da;
     --bg-darkblack: #0f0f0f;
     --white: #ffffff;
+    --dark-white: #e5e5e5;
     --midnight: #104f55;
     --light-green: #24e35a;
     --light-blue: #2a88e6;
@@ -29,25 +30,35 @@
 
 
 
-    /* gradient color  https://webgradients.com/ */
+    /*--------- Gradient Color ----------*/
+    /*--- https://webgradients.com/ ---*/
     --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
     --WinterNeva: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
     
-    /*     theme font-family     */
-/*----var---font---backupfont---*/
+    /*------ Theme font-family ----------*/
+    /*-var--font---backupfont--*/
     --Abel: 'Abel', cursive;
     --Anton: 'Anton', cursive;
-    --Josefin : 'Josefin', cursive;
+    --Josefin: 'Josefin', cursive;
     --Lexend: 'Lexend', cursive;
-    --Livvic : 'Livvic', cursive;
-    --Bungee : 'Bungee', cursive;
-    --Kalam : 'Kalam', cursive;
-    --Orbitron : 'Orbitron', cursive;
+    --Livvic: 'Livvic', cursive;
+    --Bungee: 'Bungee', cursive;
+    --Kalam: 'Kalam', cursive;
+    --Orbitron: 'Orbitron', cursive;
+    --Josefin_Sans: 'Josefin_Sans', cursive;
+    --Lexend_Deca: 'Lexend_Deca', cursive;
+    --Livvic: 'Livvic', cursive;
+    --Press_Start_2P: 'Press_Start_2P', cursive;
+    --PT_Serif: 'PT_Serif', cursive;
+    --Roboto_Slab: 'Roboto_Slab', cursive;
+    --Ubuntu: 'Ubuntu', cursive;
+    --Ultra: 'Ultra', cursive;
+    --Varela_Round: 'Varela_Round', cursive;
 }
-/*-----------------------------x-----------------------global variable---------------------x-------------------------*/
+/*--------------------------x-------------------- Global Variable End ------------------x----------------------*/
 
 
-/*----------------global Classes---------------*/
+/*---------------- Global Classes Start---------------*/
 a{
     text-decoration: none;
 }
@@ -61,12 +72,9 @@ a{
 ul{
     list-style-type: none;
 }
-/*--------x-------global Classes-------x-------*/
+/*--------x------- Global Classes End ---------x---------*/
 
-
-
-
-/*--------------------------loader------------------------------*/
+/*------------------------- Loader Start ------------------------------*/
 .loader{
     height: 100vh;
     width: 100vw;
@@ -100,9 +108,9 @@ ul{
     100%{ transform:rotate(360deg); }
 }
 
-/*------------x-------------loader------------------x-----------*/
+/*------------x----------- Loader End ------------------x-----------*/
 
-/*------------------------------navbar----------------------------------*/
+/*------------------------------ Navbar Start ----------------------------------*/
 .nav{
     background: var(--white);
     padding: 0 1rem;
@@ -116,14 +124,12 @@ ul{
 }
 
 .nav .nav-menu{
-    /*
-    https://www.w3schools.com/cssref/css3_pr_justify-content.asp
-    */
+    /*- https://www.w3schools.com/cssref/css3_pr_justify-content.asp -*/
     justify-content: space-between;
     
 }
 
-/*----------- Logo ------------*/
+/*--------------- Logo Start --------------*/
 
 .nav .nav-brand a{
     font-size: 1.6rem;
@@ -131,9 +137,9 @@ ul{
     display: block;
     font-family: var(--Lexend);
 }
-/*-----x----- Logo -----x------*/
+/*-------x------- Logo End -------x--------*/
 
-/*----- Items -----*/
+/*-------------- Items Start -------------*/
 
 .nav .nav-items{
     display: flex;
@@ -155,9 +161,9 @@ ul{
 .nav .nav-items .nav-link:hover a{
     color: var(--white);
 }
-/*--x-- Items --x--*/
+/*-------x------- Items End -------x-------*/
 
-/*-----social icon-----*/
+/*----------- Social Icon Start ----------*/
 
 .nav .social{
     padding: 1.4rem 0;
@@ -173,9 +179,10 @@ ul{
     color: #a1c4cf;
 }
 
-/*--x--social icon--x--*/
+/*------x------ Social icon End ------x------*/
 
-/*--------- collapse icon ---------*/
+/*--------- Collapse Icon Start ---------*/
+
 .nav .toggle-collapse{
     position: absolute;
     top: 0%;
@@ -193,17 +200,75 @@ ul{
     font-size: 1.4rem;
     color: var(--text-gray);
 }
-/*-----x----- collapse icon -----x-----*/
 
-/*----- jquery ----- */ 
+/*-----x----- Collapse Icon End -----x-----*/
+
+/*----- JQuery ------*/
+
 .collapse{
     height: 32rem;
 }
-/*--x-- jquery --x-- */ 
+/*--x-- JQuery --x---*/ 
 
-/*--------------x---------------navbar-------------------x--------------*/
+/*--------------x--------------- Navbar End -------------------x--------------*/
 
-/*     Viewport less than or equal to 750px     */
+
+/*--------------------------------- Main Content Start ----------------------------------*/
+main .site-title{
+    background: url("/login-site/images/mechinebackground.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--white);
+}
+
+main .site-title h1,h3{
+    margin: 1.3rem;
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background: var(--sky);
+}
+
+h1{
+    font-family: var(--Lexend);
+    font-size: 4.5rem;
+}
+
+h3{
+    font-family: var(--Kalam);
+    font-size: 2.5rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    font-family: var(--Ubuntu);
+}
+
+button.btn_2{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    font-family: var(--Ubuntu);
+}
+
+/*----------------x----------------- Main Content End --------------------x---------------*/
+
+
+
+/*------- Viewport less than or equal to 750px -------*/
 
 
 @media only screen and (max-width: 750px){
@@ -217,18 +282,6 @@ ul{
 }
 
 
-/*  x  Viewport less than or equal to 750px  x  */
+/*-----x----- Viewport less than or equal to 750px -------x-------*/
 
-/*------------------------background picture--------------------------*/
-.main-content{
-    width: 100vw;
-    height: 100vh;
-    background: url("https://source.unsplash.com/random/4000x4000") center no-repeat;
-    background-size: cover;
-    position: absolute;
-    z-index: -1;
-    left: 0px;
-    top: 0px;
-}
-/*------------x------------background picture-------------x-----------*/
 

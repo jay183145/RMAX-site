@@ -6,6 +6,7 @@ $(document).ready(function(){
 
     /* click event on toggle menu */
     $toggleCollapse.on("click", function () {
+        //This method toggles between adding/removing classes from the selected elements
         $nav.toggleClass("collapse");
     })
 });

@@ -42,8 +42,63 @@
     src: url('../fonts/Kalam/Kalam-Bold.ttf');
 }
 
-/*  font-family: Kalam  */
+/*  font-family: Orbitron  */
 @font-face {
     font-family: Orbitron;
     src: url('../fonts/Orbitron/Orbitron-VariableFont_wght.ttf');
 }
+
+/*  font-family: Josefin_Sans  */
+@font-face {
+    font-family: Josefin_Sans;
+    src: url('../fonts/Josefin_Sans/JosefinSans-Bold.ttf');
+}
+
+/*  font-family: Lexend_Deca  */
+@font-face {
+    font-family: Lexend_Deca;
+    src: url('../fonts/Lexend_Deca/LexendDeca-Regular.ttf');
+}
+
+/*  font-family: Livvic  */
+@font-face {
+    font-family: Livvic;
+    src: url('../fonts/Livvic/Livvic-Bold.ttf');
+}
+
+/*  font-family: Press_Start_2P  */
+@font-face {
+    font-family: Press_Start_2P;
+    src: url('../fonts/Press_Start_2P/PressStart2P-Regular.ttf');
+}
+
+/*  font-family: PT_Serif  */
+@font-face {
+    font-family: PT_Serif;
+    src: url('../fonts/PT_Serif/PTSerif-Bold.ttf');
+}
+
+/*  font-family: Roboto_Slab  */
+@font-face {
+    font-family: Roboto_Slab;
+    src: url('../fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf');
+}
+
+/*  font-family: Ubuntu  */
+@font-face {
+    font-family: Ubuntu;
+    src: url('../fonts/Ubuntu/Ubuntu-Bold.ttf');
+}
+
+/*  font-family: Ultra  */
+@font-face {
+    font-family: Ultra;
+    src: url('../fonts/Ultra/Ultra-Regular.ttf');
+}
+
+/*  font-family: Varela_Round  */
+@font-face {
+    font-family: Varela_Round;
+    src: url('../fonts/Varela_Round/VarelaRound-Regular.ttf');
+}
+
