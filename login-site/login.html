@@ -14,6 +14,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
+
     <!--Css style apply-->
     <link href="./styles/loginstyle.css" rel="stylesheet" type="text/css">
     <!-- Font Awesome icons import -->
@@ -75,7 +76,7 @@
                 <div class="toggle-collapse">
                     <div class="toggle-icons">
                         <!-- https://fontawesome.com/icons/bars?s=solid -->
-                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-bars" alt="x"></i>
                     </div>
                 </div>
                 <!---x--- hamberger ---x--->
@@ -91,11 +92,37 @@
                  <div class="site-background">
                      <h3>Spring & Seismograph</h3>
                      <h1>Tools that suite for you!</h1>
-                     <button class="btn">Explore</button>
-                     <button class="btn_2">Read more</button>
+                     <button class="btn btn_1">Explore</button>
+                     <button class="btn btn_2">Read more</button>
                  </div>
              </section>
         <!---------------x----------------- Site title End-----------------x--------------------->
+
+        <!--------------------------------- Carousel Start --------------------------------------->
+        
+        <section>
+            <div class="carousel">
+                <div>
+                    <a href="#" class="carousel-button prev" data-carousel button>&#8249;</a>
+                    <a href="#" class="carousel-button next" data-carousel button>&#8250;</a>           
+                </div>
+                <ul>
+                    <li class="product" data-active>
+                        <img src="../login-site/images/motor1.jpg" alt="motor1">
+                    </li>
+                    <li class="product">
+                        <img src="../login-site/images/motor2.jpeg" alt="motor2">
+                    </li>
+                    <li class="product">
+                        <img src="../login-site/images/motor3.jpg" alt="motor3">
+                    </li>
+                    <li class="product">
+                        <img src="../login-site/images/motor4.jpg" alt="motor4">
+                    </li>              
+                </ul>             
+            </div>
+        </section>
+        <!---------------x----------------- Carousel End-----------------x--------------------->
         </main>
         <!-----------------x------------------MainSite Section End---------------------x-------------------------->  
     </div>
@@ -109,9 +136,9 @@
     <script src="./scripts/loader.js"></script>
     <!--Javascript main file-->
     <script src="./scripts/main.js"></script>
-
-    <!-----------x------------ javascript End --------------x------------->
-
+    <!--Javascript carousel file-->
+    <script src="./scripts/carousel.js"></script>
+    <!-----------x----------- javascript End -------------x------------->
 </body>
 <!-------------------x--------------------------- body END------------------------x--------------------------------->
 </html>
