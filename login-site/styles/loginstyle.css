@@ -1,71 +1,361 @@
+/*import fonts*/
+@import url('../styles/fonts.css');
+
+/*---------------------------- Reset ---------------------------------*/
 *{
-    padding:0;
-    margin:0;
+    margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
     /*
     If you set box-sizing: border-box; on an element, padding and border are included in the width and height
     */
 }
+/*--------------x------------- Reset -------------------x--------------*/
 
-.spinner-wrapper{
+
+/*---------------------------------------------------- Global Variable Start --------------------------------------------------*/
+:root{
+
+    /*------ Theme Colors -------*/
+    --text-gray: #3f4954;
+    --text-light : #686666da;
+    --bg-darkblack: #0f0f0f;
+    --white: #ffffff;
+    --dark-white: #e5e5e5;
+    --midnight: #104f55;
+    --social-gray:#a1c4;
+    --light-green: #24e35a;
+    --light-blue: #2a88e6;
+    --lighter-blue: #bee1e6; 
+    --light-purple: #CDDAFD;
+    --lighter-purple: #DFE7FD;
+    --bg-black: #16191e;
+    --loader-gray: #45474b;
+    --light-gray: rgba(255,255,255,.5);
+    --light-black: rgba(255,255,255,.1);
+
+
+
+
+    /*--------- Gradient Color ----------*/
+    /*--- https://webgradients.com/ ---*/
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --WinterNeva: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    
+    /*------ Theme font-family ----------*/
+    /*-var--font---backupfont--*/
+    --Abel: 'Abel', cursive;
+    --Anton: 'Anton', cursive;
+    --Josefin: 'Josefin', cursive;
+    --Lexend: 'Lexend', cursive;
+    --Livvic: 'Livvic', cursive;
+    --Bungee: 'Bungee', cursive;
+    --Kalam: 'Kalam', cursive;
+    --Orbitron: 'Orbitron', cursive;
+    --Josefin_Sans: 'Josefin_Sans', cursive;
+    --Lexend_Deca: 'Lexend_Deca', cursive;
+    --Livvic: 'Livvic', cursive;
+    --Press_Start_2P: 'Press_Start_2P', cursive;
+    --PT_Serif: 'PT_Serif', cursive;
+    --Roboto_Slab: 'Roboto_Slab', cursive;
+    --Ubuntu: 'Ubuntu', cursive;
+    --Ultra: 'Ultra', cursive;
+    --Varela_Round: 'Varela_Round', cursive;
+}
+/*--------------------------x-------------------- Global Variable End ------------------x----------------------*/
+
+
+/*---------------- Global Classes Start---------------*/
+a{
+    text-decoration: none;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+/*--------x------- Global Classes End ---------x---------*/
+
+/*------------------------- Loader Start ------------------------------*/
+.loader{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: var(--bg-black);
+    position: absolute;
+    z-index: 99;
+}
+.loader>div{
+    height: 100px;
+    width: 100px;
+    border: 15px solid var(--loader-gray);
+    border-top-color: var(--light-blue);
+    position: absolute;
+    margin:auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    animation: spin 1.5s infinite cubic-bezier(0.3,0.8,0.7,0.3);
+    /*
+    animation: spin <-name of the keyframe you want to bind to the selector
+    cubic-bezier(x1,x2,y1,y2)
+    go check https://cubic-bezier.com/;
+    */
+}
+
+@keyframes spin{
+    0%{ transform:rotate(0deg); }
+    100%{ transform:rotate(360deg); }
+}
+
+/*------------x----------- Loader End ------------------x-----------*/
+
+/*------------------------------ Navbar Start ----------------------------------*/
+.nav{
+    background: var(--white);
+    padding: 0 1rem;
+    /*
+    collapsible nav menu
+    */
+    height: 0rem;
+    min-height: 4rem;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu{
+    /*- https://www.w3schools.com/cssref/css3_pr_justify-content.asp -*/
+    justify-content: space-between;
+    
+}
+
+/*--------------- Logo Start --------------*/
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Lexend);
+}
+/*-------x------- Logo End -------x--------*/
+
+/*-------------- Items Start -------------*/
+
+.nav .nav-items{
+    display: flex;
+    padding: 0 0;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.3rem;
+    font-size: 1.2rem;
+    position: relative;
+    font-family: var(--Kalam);
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: var(--midnight);
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: var(--white);
+}
+/*-------x------- Items End -------x-------*/
+
+/*----------- Social Icon Start ----------*/
+
+.nav .social{
+    padding: 1.4rem 0;
+}
+
+.nav .social i{
+    padding: 0.2rem 0.2em;
+    /*--adjust icon size--*/
+    font-size: 1.1rem;
+}
+
+.nav .social i:hover{
+    color: var(--social-gray);
+}
+
+/*------x------ Social icon End ------x------*/
+
+/*--------- Collapse Icon Start ---------*/
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5rem 0;
+}
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--loader-gray); 
+}
+
+/*-----x----- Collapse Icon End -----x-----*/
+
+/*----- JQuery ------*/
+
+.collapse{
+    height: 32rem;
+}
+/*--x-- JQuery --x---*/ 
+
+/*--------------x--------------- Navbar End -------------------x--------------*/
+
+
+/*--------------------------------- Main Content Start ----------------------------------*/
+main .site-title{
+    background: url("/login-site/images/mechinebackground.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    opacity: 0.9;
+}
+/* title color */
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--lighter-purple);
+}
+
+main .site-title h1,h3{
+    margin: 1.3rem;
+}
+/*-- btn background --*/
+main .site-title .btn_1{
+    margin: 1.8rem;
+    background: var(--sky);
+}
+
+main .site-title .btn_2{
+    margin: 1.8rem;
+    background: var(--white);
+}
+/*-- title style --*/
+h1{
+    font-family: var(--Lexend);
+    font-size: 4.5rem;
+}
+
+h3{
+    font-family: var(--Kalam);
+    font-size: 2.5rem;
+}
+
+/*-- all btn style --*/
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    font-family: var(--Ubuntu);
+    cursor: pointer;
+}
+
+main .site-title .site-background .btn:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white)
+}
+
+/*----------------x----------------- Main Content End --------------------x---------------*/
+
+/*---------------------------------- Carousel Start ------------------------------------*/
+.product>img{
+    opacity: 0.8;
+}
+
+.carousel{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.product{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.product>img{
+    display: block;
     width: 100%;
     height: 100%;
-    background-color: #151515;
+    object-fit: cover;
+    object-position: center;
+}
+
+.product[data-active]{
+    opacity: 1;
+}
+
+.carousel-button{
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: none;
+    border: none;
+    z-index: 2;
+    font-size: 5rem;
+    top: 50%; 
+    transform: translateY(-50%);
+    color: var(--light-gray);
+    background-color: rgba(0,0,0,.1);
+    padding: 0.1rem 0.5rem 0.5rem 0.5rem;
 }
 
-.main-content{
-    width: 100%;
-    height: 100vh;
-    background: url("https://source.unsplash.com/random/4000x4000") center no-repeat;
-    background-size: cover;
+.carousel-button:hover,
+.carousel-button:focus{
+    color: var(--white);
+    background-color: rgba(0,0,0,.2);
 }
 
-#checkbutton{
-    cursor: pointer;
-    display: inline-block;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.52);
-    border: 0;
-    color: rgb(57, 0, 214);
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 17px 30px;
-    transition: 1s;
-    z-index: 1;
-    box-shadow: 0 3px 24px rgb(0 0 0 / 10%); 
-
-    border-radius: 15px;
+.carousel-button:focus{
+    outline: 1px solid black;
 }
 
-#morebutton{
-    cursor: pointer;
-    display: inline-block;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    position: relative;
-    background-color: #fbcc0a;
-    border: 0;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 17px 30px;
-    transition: 1s;
-    z-index: 1;
-    box-shadow: 0 3px 24px rgb(0 0 0 / 10%); 
-
-    border-radius: 15px;
+.carousel-button.prev{
+    left: 1rem;
 }
+
+.carousel-button.next{
+    right: 2rem;
+}
+
+
+
+/*----------------x------------------ Carousel End ---------------------x---------------*/
+
+/*------- Viewport less than or equal to 750px -------*/
+
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+}
+
+
+/*-----x----- Viewport less than or equal to 750px -------x-------*/
+
 

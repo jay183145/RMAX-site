@@ -14,26 +14,131 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
+
     <!--Css style apply-->
-    <link href="styles/loginstyle.css" rel="stylesheet" type="text/css">
+    <link href="./styles/loginstyle.css" rel="stylesheet" type="text/css">
+    <!-- Font Awesome icons import -->
+    <script src="https://kit.fontawesome.com/15bbc0f6c8.js" crossorigin="anonymous"></script>
 </head>
 
-<!-- body -->
+<!--------------------------------------------- body Start ------------------------------------------------------->
 <body>
-    <!-- loader  -->
-    <div class="spinner-wrapper">
-        <div class="spinner"><img src="images/Spinner.gif" alt="" /></div>
+    <!------------------------------ Loader Start --------------------------------------->
+    <div class="loader">
+        <div></div>
     </div>
+    <!------------x------------------ Loader END -------------------x-------------------->
 
-    <!-- checkout  -->
-    <div id="title">Different Machine</div><br>
-    <div id="maincontent">Different Future</div><br>
-    <div>
-        <a href="#" id="checkbutton">try it now!</a>
-        <a href="#" id="morebutton">read more</a>
+    <!-------------------------------------- Main content Start ------------------------------------------->
+    <div class="content">
+        <!-------------------------------- Navigation Start ------------------------------------------->
+        <nav class="nav">
+            <div class="nav-menu flex-row">
+                <!------ Logo ------>
+                <div class="nav-brand">
+                    <a href="#" class="text-gray">RMAX</a>
+                </div>
+                <!--x--- Logo ---x-->
+
+                <!------ items ----->
+                <div>
+                    <ul class="nav-items">
+                        <li class="nav-link">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">Category</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">Archive</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">Pages</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--x--- items ---x-->
+
+                <!------ social icon ------>
+                <div class="social text-gray">
+                    <!-- https://fontawesome.com/ -->
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <!--x--- social icon --x--->
+
+                <!------- hamberger ------->
+                <div class="toggle-collapse">
+                    <div class="toggle-icons">
+                        <!-- https://fontawesome.com/icons/bars?s=solid -->
+                        <i class="fa-solid fa-bars" alt="x"></i>
+                    </div>
+                </div>
+                <!---x--- hamberger ---x--->
+            </div>
+        </nav>
+        <!---------------x---------------- Navigation End -------------------x------------------------>
+
+
+        <!----------------------------------- MainSite Section Start ----------------------------------------------->
+        <main>
+        <!--------------------------------- Site title Start--------------------------------------->
+             <section class="site-title">
+                 <div class="site-background">
+                     <h3>Spring & Seismograph</h3>
+                     <h1>Tools that suite for you!</h1>
+                     <button class="btn btn_1">Explore</button>
+                     <button class="btn btn_2">Read more</button>
+                 </div>
+             </section>
+        <!---------------x----------------- Site title End-----------------x--------------------->
+
+        <!--------------------------------- Carousel Start --------------------------------------->
+        
+        <section>
+            <div class="carousel">
+                <div>
+                    <a href="#" class="carousel-button prev" data-carousel button>&#8249;</a>
+                    <a href="#" class="carousel-button next" data-carousel button>&#8250;</a>           
+                </div>
+                <ul>
+                    <li class="product" data-active>
+                        <img src="../login-site/images/motor1.jpg" alt="motor1">
+                    </li>
+                    <li class="product">
+                        <img src="../login-site/images/motor2.jpeg" alt="motor2">
+                    </li>
+                    <li class="product">
+                        <img src="../login-site/images/motor3.jpg" alt="motor3">
+                    </li>
+                    <li class="product">
+                        <img src="../login-site/images/motor4.jpg" alt="motor4">
+                    </li>              
+                </ul>             
+            </div>
+        </section>
+        <!---------------x----------------- Carousel End-----------------x--------------------->
+        </main>
+        <!-----------------x------------------MainSite Section End---------------------x-------------------------->  
     </div>
-    <div class="main-content"></div>
-    <script src="scripts/spinner.js"></script>
+    <!----------------x--------------------- Main content End -------------------x----------------------->
+
+    <!-------------------- javascript Start --------------------------->
+
+    <!--Jquery library file-->
+    <script src="./scripts/jquery3.6.0.min.js"></script>
+    <!--Javascript loader file-->
+    <script src="./scripts/loader.js"></script>
+    <!--Javascript main file-->
+    <script src="./scripts/main.js"></script>
+    <!--Javascript carousel file-->
+    <script src="./scripts/carousel.js"></script>
+    <!-----------x----------- javascript End -------------x------------->
 </body>
-
+<!-------------------x--------------------------- body END------------------------x--------------------------------->
 </html>
