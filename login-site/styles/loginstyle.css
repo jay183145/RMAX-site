@@ -79,6 +79,10 @@ a{
 ul{
     list-style-type: none;
 }
+
+.text-gray{
+    color: var(--text-gray);
+}
 /*--------x------- Global Classes End ---------x---------*/
 
 /*------------------------- Loader Start ------------------------------*/
@@ -252,7 +256,7 @@ main .site-title .btn_2{
 /*-- title style --*/
 h1{
     font-family: var(--Lexend);
-    font-size: 4.5rem;
+    font-size: 3.5rem;
 }
 
 h3{
@@ -278,69 +282,32 @@ main .site-title .site-background .btn:hover{
 
 /*----------------x----------------- Main Content End --------------------x---------------*/
 
-/*---------------------------------- Carousel Start ------------------------------------*/
-.product>img{
-    opacity: 0.8;
+/*---------------------------------- Site Content Start ------------------------------------*/
+main .site-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
 }
 
-.carousel{
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-}
-
-.product{
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-}
-
-.product>img{
-    display: block;
+main .post-content{
+    margin-bottom: 5rem;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
 }
 
-.product[data-active]{
-    opacity: 1;
+main .site-content .post-content>.post-image,.post-title{
+    padding: 1rem;
+    position: relative;
 }
 
-.carousel-button{
+main .site-content .post-content>.post-image .post-info{
+    background: var(--sky);
+    padding: 1rem;
     position: absolute;
-    background: none;
-    border: none;
-    z-index: 2;
-    font-size: 5rem;
-    top: 50%; 
-    transform: translateY(-50%);
-    color: var(--light-gray);
-    background-color: rgba(0,0,0,.1);
-    padding: 0.1rem 0.5rem 0.5rem 0.5rem;
+    bottom: 0%;
+    left: 18vw;
+    border-radius: 3rem;
 }
 
-.carousel-button:hover,
-.carousel-button:focus{
-    color: var(--white);
-    background-color: rgba(0,0,0,.2);
-}
-
-.carousel-button:focus{
-    outline: 1px solid black;
-}
-
-.carousel-button.prev{
-    left: 1rem;
-}
-
-.carousel-button.next{
-    right: 2rem;
-}
-
-
-
-/*----------------x------------------ Carousel End ---------------------x---------------*/
+/*----------------x------------------ Site Content End ---------------------x---------------*/
 
 /*------- Viewport less than or equal to 750px -------*/
 
