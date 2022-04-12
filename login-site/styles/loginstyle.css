@@ -340,6 +340,28 @@ main .post-content .post-title a{
     background: var(--sky);
 }
 
+.site-content .pagination{
+    justify-content: center;
+    color: var(--text-gray);
+    margin: 4rem 0;
+}
+
+.site-content .pagination a{
+    padding: .6rem .9rem;
+    margin: .3rem;
+    font-family: var(--Livvic);
+    font-size: 24px;
+    border-radius: 50%;
+    text-decoration: underline 2px;
+}
+.site-content .pagination a i{
+    margin-top: 0.3rem;
+}
+.site-content .pagination a:hover{
+    background: var(--text-gray);
+    color: var(--white);
+}
+
 /*----------------x------------------ Site Content End ---------------------x---------------*/
 
 /*------- Viewport less than or equal to 750px -------*/
