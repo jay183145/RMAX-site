@@ -83,6 +83,13 @@ ul{
 .text-gray{
     color: var(--text-gray);
 }
+p{
+    font-family: var(--Josefin);
+    font-size: 16px;
+    color: var(--text-light);
+    margin: 1rem;
+}
+
 /*--------x------- Global Classes End ---------x---------*/
 
 /*------------------------- Loader Start ------------------------------*/
@@ -289,12 +296,11 @@ main .site-content{
 }
 
 main .post-content{
-    margin-bottom: 5rem;
     width: 100%;
 }
 
 main .site-content .post-content>.post-image,.post-title{
-    padding: 1rem;
+    padding: 1rem 2rem;
     position: relative;
 }
 
@@ -321,7 +327,17 @@ main .site-content .post-content>.post-image .img:hover{
 
 main .site-content .post-content>.post-image .post-info span{
     margin: 0.5rem;
+}
 
+main .post-content .post-title a{
+    font-family: var(--Anton);
+    font-size: 1.5rem;
+}
+
+.site-content .post-content .post-title .post-btn{
+    border-radius: 0;
+    padding: 0.7rem 1.5rem;
+    background: var(--sky);
 }
 
 /*----------------x------------------ Site Content End ---------------------x---------------*/
