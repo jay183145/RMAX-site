@@ -298,6 +298,7 @@ main .site-content{
 
 main .post-content{
     width: 100%;
+    padding-top: 1rem;
 }
 
 main .site-content .post-content>.post-image,.post-title{
@@ -367,13 +368,18 @@ main .post-content .post-title a{
 
 /*---------------------------------- Side Bar Start ------------------------------------*/
 .site-content .sidebar .category{
-    font-family: var(--Kalam);
+    font-family: var(--Livvic);
+    padding-top: 2rem;
+}
+
+.site-content .sidebar .category-list{
+    padding-top: 1rem;
 }
 
 .site-content .sidebar .category-list .list-items{
     background: var(--sky);
-    padding:.4rem 1rem;
-    margin:.8rem 0;
+    padding: 0.7rem 1.5rem;
+    margin: 1rem 2rem;
     width: 70%;
     border-radius: 3rem;
     display: flex;
@@ -389,7 +395,8 @@ main .post-content .post-title a{
 }
 
 .site-content .sidebar .popular-post h2{
-    padding-top: 8rem;
+    padding-top: 5rem;
+    font-family: var(--Livvic);
 }
 
 .site-content .sidebar .popular-post .post-info{
@@ -402,6 +409,30 @@ main .post-content .post-title a{
 
 .site-content .sidebar .popular-post .post-title a{
     font-size: 1rem;
+}
+
+.site-content .sidebar .newsletter{
+    padding-top: 3rem;
+    font-family: var(--Livvic);
+}
+
+.site-content .sidebar .newsletter .form-element{
+    padding: 2rem 2rem;
+}
+
+.site-content .sidebar .newsletter .input-element{
+    width: 87%;
+    height: 3rem;
+    padding: .3rem .5rem;
+    font-family: var(--Lexend);
+    font-size: 1rem;
+}
+
+.site-content .sidebar .newsletter .form-btn{
+    border-radius: 0;
+    padding: .8rem 32%; 
+    margin: 1rem 0;
+    background: var(--sky);
 }
 /*----------------x------------------ Side Bar End ---------------------x---------------*/
 
