@@ -20,6 +20,7 @@
     --text-gray: #3f4954;
     --text-light : #686666da;
     --bg-darkblack: #0f0f0f;
+    --font-darkblack: rgb(0, 0, 0);
     --white: #ffffff;
     --dark-white: #e5e5e5;
     --midnight: #104f55;
@@ -363,6 +364,26 @@ main .post-content .post-title a{
 }
 
 /*----------------x------------------ Site Content End ---------------------x---------------*/
+
+/*---------------------------------- Side Bar Start ------------------------------------*/
+.site-content .sidebar .category{
+    font-family: var(--Kalam);
+}
+
+.site-content .sidebar .category-list .list-items{
+    background: var(--sky);
+    padding:.4rem 1rem;
+    margin:.8rem 0;
+    width: 70%;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-content .sidebar .category-list .list-items a{
+    color: var(--font-darkblack);
+}
+/*----------------x------------------ Side Bar End ---------------------x---------------*/
 
 /*------- Viewport less than or equal to 750px -------*/
 
