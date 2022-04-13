@@ -434,6 +434,23 @@ main .post-content .post-title a{
     margin: 1rem 0;
     background: var(--sky);
 }
+
+.site-content .sidebar .popular-tags{
+    font-family: var(--Livvic);
+    padding: 5rem 0;
+}
+
+.site-content .sidebar .popular-tags .tags{
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-wrap: wrap; 
+}
+.site-content .sidebar .popular-tags .tags .tag{
+    background: var(--sky);
+    padding: 1rem 1rem;
+    border-radius: 3rem;
+    margin: .4rem .3rem;
+}
 /*----------------x------------------ Side Bar End ---------------------x---------------*/
 
 /*------- Viewport less than or equal to 750px -------*/
