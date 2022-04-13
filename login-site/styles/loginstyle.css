@@ -102,7 +102,7 @@ p{
     position: absolute;
     z-index: 99;
 }
-.loader>div{
+.loader div{
     height: 100px;
     width: 100px;
     border: 15px solid var(--loader-gray);
@@ -298,15 +298,19 @@ main .site-content{
 
 main .post-content{
     width: 100%;
-    padding-top: 1rem;
 }
 
-main .site-content .post-content>.post-image,.post-title{
+main .site-content .post-content .post-image {
     padding: 1rem 2rem;
     position: relative;
 }
 
-main .site-content .post-content>.post-image .post-info{
+main .site-content .post-content .post-title{
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+main .site-content .post-content .post-info{
     background: var(--sky);
     padding: 1rem;
     position: absolute;
@@ -315,19 +319,22 @@ main .site-content .post-content>.post-image .post-info{
     border-radius: 3rem;
 }
 
-main .site-content .post-content>.post-image>div{
+main .site-content .post-content .post-image div{
     overflow: hidden;
 }
-main .site-content .post-content>.post-image .img{
+
+main .site-content .post-content .post-image .img{
     width:100%;
+    height:100%;
+    object-fit: cover;
     transition: all 1s ease;
 }
 
-main .site-content .post-content>.post-image .img:hover{
+main .site-content .post-content .post-image .img:hover{
     transform: scale(1.3);
 }
 
-main .site-content .post-content>.post-image .post-info span{
+main .site-content .post-content .post-image .post-info span{
     margin: 0.5rem;
 }
 
@@ -338,7 +345,7 @@ main .post-content .post-title a{
 
 .site-content .post-content .post-title .post-btn{
     border-radius: 0;
-    padding: 0.7rem 1.5rem;
+    padding: .7rem 1.5rem;
     background: var(--sky);
 }
 
@@ -412,7 +419,7 @@ main .post-content .post-title a{
 }
 
 .site-content .sidebar .newsletter{
-    padding-top: 3rem;
+    padding-top: 5rem;
     font-family: var(--Livvic);
 }
 
