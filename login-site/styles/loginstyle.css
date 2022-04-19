@@ -460,6 +460,58 @@ main .post-content .post-title a{
 }
 /*----------------x------------------ Side Bar End ---------------------x---------------*/
 
+/*---------------------------------- Footer Start ------------------------------------*/
+footer.footer{
+    height: 100%;
+    background: var(--bg-black);
+    position: relative;
+}
+
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+footer.footer .container>div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem 5rem;
+}
+
+footer.footer .container h2{
+    color: var(--white);
+    font-family: var(--Livvic);
+}
+
+footer.footer .newsletter .form-element{
+    background: var(--bg-black);
+    display: inline-block;
+}
+
+footer.footer .newsletter .form-element input{
+    padding: .5rem .7rem;
+    border: none;
+    color: var(--white);
+    background: transparent;
+    font-family: var(--Josefin);
+    font-size: 1rem;
+    width:74%;
+}
+
+footer.footer .newsletter .form-element span{
+    background: var(--sky);
+    padding:.5rem .7rem;
+    cursor: pointer;
+}
+
+footer.footer .instagram div>img{
+    display: inline-block;
+    width: 25%;
+    height: 50px;
+    margin: .3rem .4rem;
+}
+/*----------------x------------------ Footer End ---------------------x---------------*/
+
 /*------- Viewport less than or equal to 750px -------*/
 
 
