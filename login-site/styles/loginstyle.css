@@ -189,9 +189,9 @@ p{
 }
 
 .nav .social i{
-    padding: 0.2rem 0.2em;
+    padding: 0rem 0.2em;
     /*--adjust icon size--*/
-    font-size: 1.1rem;
+    font-size: 1.6rem;
 }
 
 .nav .social i:hover{
