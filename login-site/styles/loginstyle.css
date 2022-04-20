@@ -510,6 +510,16 @@ footer.footer .instagram div>img{
     height: 50px;
     margin: .3rem .4rem;
 }
+
+footer.footer .follow div{
+    padding-left: 0.5rem;
+}
+footer.footer .follow div>a{
+    color: var(--white);
+    padding: 0rem .5rem;
+    font-size: 30px;
+
+}
 /*----------------x------------------ Footer End ---------------------x---------------*/
 
 /*------- Viewport less than or equal to 750px -------*/
