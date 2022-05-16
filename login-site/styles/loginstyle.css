@@ -234,7 +234,7 @@ p{
 
 /*--------------------------------- Main Content Start ----------------------------------*/
 main .site-title{
-    background: url("/login-site/images/mechinebackground.jpg");
+    background: url("../images/mechinebackground.jpg");
     background-size: cover;
     height: 100vh;
     display: flex;
